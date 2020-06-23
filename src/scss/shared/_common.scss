@@ -23,3 +23,24 @@ img {
 *, body {
   font-variant-ligatures: none;
 }
+
+.left-before {
+  position: relative;
+  font-family: $font-family-monospace;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: $secondary;
+    left: -43px;
+    top: 25px;
+    @include media-breakpoint-down('lg') {
+      background-color: transparent;
+    }
+  }
+}
+
+.border-bottom-primary {
+  border-bottom: 1px solid $primary;
+}

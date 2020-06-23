@@ -1,4 +1,4 @@
-.card-case {
+.card-product {
   border: 1px solid $primary;
   min-height: 570px;
   display: flex;
@@ -34,5 +34,81 @@
   }
   a {
     margin-bottom: 16px;
+    font-weight: 500;
+  }
+}
+
+.card-catalog {
+  border: 1px solid $primary;
+  min-height: 554px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 35px 25px;
+  position: relative;
+  background-color: $white;
+  margin-bottom: 115px;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 2px;
+    top: 0;
+    background-color: $primary;
+  }
+  .card-title {
+    font-family: $font-family-monospace;
+    margin-bottom: 20px;
+    color: $primary;
+    min-height: 54px;
+  }
+  img {
+    margin-bottom: 36px;
+    width: 100%;
+    max-width: 320px;
+  }
+  .btn {
+    margin-bottom: 32px;
+    font-size: $font-size-sm;
+  }
+  a {
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+}
+
+.card-product-detail {
+  border: 1px solid $primary;
+  min-height: 570px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 35px 25px;
+  position: relative;
+  background-color: $white;
+  margin-bottom: 115px;
+  @include media-breakpoint-down('md') {
+    margin-bottom: 40px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 2px;
+    top: 0;
+    background-color: $primary;
+  }
+  img {
+    width: 100%;
+    margin-top: 105px;
+    margin-bottom: 116px;
+  }
+  .description {
+    font-family: $font-family-monospace;
+    margin-bottom: 18px;
+    color: $primary;
+    min-height: 70px;
   }
 }

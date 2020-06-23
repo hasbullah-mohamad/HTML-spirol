@@ -55,5 +55,35 @@
     }
     padding-top: 140px;
     padding-bottom: 40px;
+    @include media-breakpoint-down('md') {
+      padding-top: 70px;
+      padding-bottom: 20px;
+    }
+  }
+  .section-features {
+    padding-top: 311px;
+    padding-bottom: 40px;
+    margin-top: -265px;
+    background-color: $gray-100;
+    .feature-box {
+      width: 100%;
+      background-color: $white;
+      padding: 45px 60px;
+      display: flex;
+      justify-content: space-between;
+      @include media-breakpoint-down('md') {
+        flex-wrap: wrap;
+        justify-content: center;
+        .btn {
+          width: 100%;
+        }
+      }
+      .btn {
+        max-width: 215px;
+        font-size: $font-size-sm;
+        font-weight: 400;
+        margin: 5px;
+      }
+    }
   }
 }

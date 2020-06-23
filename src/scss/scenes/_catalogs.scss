@@ -10,4 +10,13 @@
   .section-space {
     border-bottom: 1px solid $primary;
   }
+  .product-catalogs {
+    padding-top: 168px;
+    padding-bottom: 92px;
+    @include media-breakpoint-down('md') {
+      padding-top: 88px;
+      padding-bottom: 50px;
+    }
+    
+  }
 }
