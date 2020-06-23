@@ -634,8 +634,8 @@ mark,
 
 .container {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -653,16 +653,16 @@ mark,
 
 .container-fluid {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -20px;
-  margin-left: -20px; }
+  margin-right: -15px;
+  margin-left: -15px; }
 
 .no-gutters {
   margin-right: 0;
@@ -680,8 +680,8 @@ mark,
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px; }
+  padding-right: 15px;
+  padding-left: 15px; }
 
 .col {
   flex-basis: 0;
@@ -6299,25 +6299,25 @@ a.text-pink:hover, a.text-pink:focus {
   display: flex;
   flex-direction: column; }
   .card-deck .card {
-    margin-bottom: 20px; }
+    margin-bottom: 15px; }
   @media (min-width: 576px) {
     .card-deck {
       flex-flow: row wrap;
-      margin-right: -20px;
-      margin-left: -20px; }
+      margin-right: -15px;
+      margin-left: -15px; }
       .card-deck .card {
         display: flex;
         flex: 1 0 0%;
         flex-direction: column;
-        margin-right: 20px;
+        margin-right: 15px;
         margin-bottom: 0;
-        margin-left: 20px; } }
+        margin-left: 15px; } }
 
 .card-group {
   display: flex;
   flex-direction: column; }
   .card-group > .card {
-    margin-bottom: 20px; }
+    margin-bottom: 15px; }
   @media (min-width: 576px) {
     .card-group {
       flex-flow: row wrap; }
@@ -8207,6 +8207,39 @@ h6 {
   width: 14px;
   height: 14px; }
 
+.card-case {
+  border: 1px solid #005596;
+  min-height: 570px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 35px 25px;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 20px; }
+  .card-case:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 2px;
+    top: 0;
+    background-color: #005596; }
+  .card-case .card-title {
+    font-family: Raleway;
+    margin-bottom: 20px;
+    color: #005596;
+    min-height: 54px; }
+  .card-case img {
+    margin-bottom: 36px;
+    width: 100%;
+    max-width: 320px; }
+  .card-case .btn {
+    margin-bottom: 32px;
+    font-size: 14px; }
+  .card-case a {
+    margin-bottom: 16px; }
+
 .site-header {
   position: fixed;
   top: 0;
@@ -8784,14 +8817,14 @@ h6 {
     margin-top: 0;
     border-top: 1px solid #005596; }
 
-.about-page .one-column-blue {
+.about-page .one-column-primary {
   position: relative;
   padding: 160px 0; }
-  .about-page .one-column-blue .title {
+  .about-page .one-column-primary .title {
     position: relative;
     margin-bottom: 100px;
     font-family: Raleway; }
-    .about-page .one-column-blue .title:before {
+    .about-page .one-column-primary .title:before {
       content: '';
       position: absolute;
       width: 40px;
@@ -8800,11 +8833,11 @@ h6 {
       left: -57px;
       top: 25px; }
       @media (max-width: 991.98px) {
-        .about-page .one-column-blue .title:before {
+        .about-page .one-column-primary .title:before {
           background-color: transparent; } }
-  .about-page .one-column-blue ul {
+  .about-page .one-column-primary ul {
     display: inline-block; }
-    .about-page .one-column-blue ul .nav-item .nav-link {
+    .about-page .one-column-primary ul .nav-item .nav-link {
       font-size: 20px;
       font-weight: 500; }
 
@@ -8895,16 +8928,16 @@ h6 {
             text-align: center;
             margin-bottom: 40px; }
 
-.about-page .two-column-blue {
+.about-page .two-column-primary {
   background-color: #005596;
   position: relative;
   padding-top: 156px;
   padding-bottom: 130px; }
   @media (max-width: 1139.98px) {
-    .about-page .two-column-blue {
+    .about-page .two-column-primary {
       padding-top: 40px;
       padding-bottom: 60px; } }
-  .about-page .two-column-blue:before {
+  .about-page .two-column-primary:before {
     content: '';
     position: absolute;
     width: 40%;
@@ -8913,12 +8946,12 @@ h6 {
     left: 0;
     top: -290px; }
     @media (max-width: 1139.98px) {
-      .about-page .two-column-blue:before {
+      .about-page .two-column-primary:before {
         display: none; } }
-  .about-page .two-column-blue .title {
+  .about-page .two-column-primary .title {
     position: relative;
     font-family: Raleway; }
-    .about-page .two-column-blue .title:before {
+    .about-page .two-column-primary .title:before {
       content: '';
       position: absolute;
       width: 30px;
@@ -8927,9 +8960,9 @@ h6 {
       left: -43px;
       top: 25px; }
       @media (max-width: 1139.98px) {
-        .about-page .two-column-blue .title:before {
+        .about-page .two-column-primary .title:before {
           background-color: transparent; } }
-  .about-page .two-column-blue .value-item .value {
+  .about-page .two-column-primary .value-item .value {
     padding: 6px 0; }
 
 .case-studies-page .section-rect {
@@ -8939,18 +8972,18 @@ h6 {
     margin-top: 0;
     border-top: 1px solid #005596; }
 
-.case-studies-page .two-column-blue {
+.case-studies-page .two-column-primary {
   background-color: #005596;
   position: relative;
   padding-top: 168px;
   padding-bottom: 60px; }
   @media (max-width: 1139.98px) {
-    .case-studies-page .two-column-blue {
+    .case-studies-page .two-column-primary {
       padding-top: 40px; } }
-  .case-studies-page .two-column-blue .title {
+  .case-studies-page .two-column-primary .title {
     position: relative;
     font-family: Raleway; }
-    .case-studies-page .two-column-blue .title:before {
+    .case-studies-page .two-column-primary .title:before {
       content: '';
       position: absolute;
       width: 30px;
@@ -8959,9 +8992,9 @@ h6 {
       left: -43px;
       top: 25px; }
       @media (max-width: 1139.98px) {
-        .case-studies-page .two-column-blue .title:before {
+        .case-studies-page .two-column-primary .title:before {
           background-color: transparent; } }
-  .case-studies-page .two-column-blue .value-item .value {
+  .case-studies-page .two-column-primary .value-item .value {
     padding: 6px 0;
     font-weight: 500;
     font-size: 20px; }
@@ -8973,18 +9006,18 @@ h6 {
     margin-top: 0;
     border-top: 1px solid #005596; }
 
-.case-studies-detail-page .two-column-blue {
+.case-studies-detail-page .two-column-primary {
   background-color: #005596;
   position: relative;
   padding-top: 168px;
   padding-bottom: 60px; }
   @media (max-width: 1139.98px) {
-    .case-studies-detail-page .two-column-blue {
+    .case-studies-detail-page .two-column-primary {
       padding-top: 40px; } }
-  .case-studies-detail-page .two-column-blue .title {
+  .case-studies-detail-page .two-column-primary .title {
     position: relative;
     font-family: Raleway; }
-    .case-studies-detail-page .two-column-blue .title:before {
+    .case-studies-detail-page .two-column-primary .title:before {
       content: '';
       position: absolute;
       width: 30px;
@@ -8993,16 +9026,18 @@ h6 {
       left: -43px;
       top: 25px; }
       @media (max-width: 1139.98px) {
-        .case-studies-detail-page .two-column-blue .title:before {
+        .case-studies-detail-page .two-column-primary .title:before {
           background-color: transparent; } }
 
-.case-studies-detail-page .one-column-white {
-  padding-top: 140px;
+.case-studies-detail-page .one-column-gray {
+  background-color: #F4F5F7;
+  padding-top: 310px;
+  margin-top: -190px;
   padding-bottom: 40px; }
-  .case-studies-detail-page .one-column-white .title {
+  .case-studies-detail-page .one-column-gray .title {
     position: relative;
     font-family: Raleway; }
-    .case-studies-detail-page .one-column-white .title:before {
+    .case-studies-detail-page .one-column-gray .title:before {
       content: '';
       position: absolute;
       width: 30px;
@@ -9011,7 +9046,7 @@ h6 {
       left: -43px;
       top: 25px; }
       @media (max-width: 1139.98px) {
-        .case-studies-detail-page .one-column-white .title:before {
+        .case-studies-detail-page .one-column-gray .title:before {
           background-color: transparent; } }
 
 .whitepapers-page .section-rect {
@@ -9024,18 +9059,18 @@ h6 {
 .whitepapers-page .section-space {
   border-bottom: 1px solid #005596; }
 
-.whitepapers-page .two-column-blue {
+.whitepapers-page .two-column-primary {
   background-color: #005596;
   position: relative;
   padding-top: 168px;
   padding-bottom: 60px; }
   @media (max-width: 1139.98px) {
-    .whitepapers-page .two-column-blue {
+    .whitepapers-page .two-column-primary {
       padding-top: 40px; } }
-  .whitepapers-page .two-column-blue .title {
+  .whitepapers-page .two-column-primary .title {
     position: relative;
     font-family: Raleway; }
-    .whitepapers-page .two-column-blue .title:before {
+    .whitepapers-page .two-column-primary .title:before {
       content: '';
       position: absolute;
       width: 30px;
@@ -9044,16 +9079,16 @@ h6 {
       left: -43px;
       top: 25px; }
       @media (max-width: 1139.98px) {
-        .whitepapers-page .two-column-blue .title:before {
+        .whitepapers-page .two-column-primary .title:before {
           background-color: transparent; } }
   @media (max-width: 991.98px) {
-    .whitepapers-page .two-column-blue .value-item {
+    .whitepapers-page .two-column-primary .value-item {
       padding-left: 0; } }
-  .whitepapers-page .two-column-blue .value-item .value {
+  .whitepapers-page .two-column-primary .value-item .value {
     padding: 6px 0;
     font-weight: 500;
     font-size: 20px; }
-  .whitepapers-page .two-column-blue .down-item {
+  .whitepapers-page .two-column-primary .down-item {
     max-width: 340px;
     margin-left: 40px;
     margin-bottom: 20px;
@@ -9064,7 +9099,7 @@ h6 {
     justify-content: space-between;
     align-items: center; }
     @media (max-width: 991.98px) {
-      .whitepapers-page .two-column-blue .down-item {
+      .whitepapers-page .two-column-primary .down-item {
         margin-left: 0; } }
 
 .catalogs-page .section-rect {
@@ -9087,18 +9122,18 @@ h6 {
 .products-page .section-space {
   border-bottom: 1px solid #005596; }
 
-.products-page .two-column-blue {
+.products-page .two-column-primary {
   background-color: #005596;
   position: relative;
   padding-top: 168px;
   padding-bottom: 60px; }
   @media (max-width: 1139.98px) {
-    .products-page .two-column-blue {
+    .products-page .two-column-primary {
       padding-top: 40px; } }
-  .products-page .two-column-blue .title {
+  .products-page .two-column-primary .title {
     position: relative;
     font-family: Raleway; }
-    .products-page .two-column-blue .title:before {
+    .products-page .two-column-primary .title:before {
       content: '';
       position: absolute;
       width: 30px;
@@ -9107,9 +9142,9 @@ h6 {
       left: -43px;
       top: 25px; }
       @media (max-width: 1139.98px) {
-        .products-page .two-column-blue .title:before {
+        .products-page .two-column-primary .title:before {
           background-color: transparent; } }
-  .products-page .two-column-blue .value-item .value {
+  .products-page .two-column-primary .value-item .value {
     padding: 6px 0;
     font-weight: 500;
     font-size: 20px; }
@@ -9138,18 +9173,18 @@ h6 {
     margin-top: 0;
     border-top: 1px solid #005596; }
 
-.product-detail-page .two-column-blue {
+.product-detail-page .two-column-primary {
   background-color: #005596;
   position: relative;
   padding-top: 168px;
   padding-bottom: 60px; }
   @media (max-width: 1139.98px) {
-    .product-detail-page .two-column-blue {
+    .product-detail-page .two-column-primary {
       padding-top: 40px; } }
-  .product-detail-page .two-column-blue .title {
+  .product-detail-page .two-column-primary .title {
     position: relative;
     font-family: Raleway; }
-    .product-detail-page .two-column-blue .title:before {
+    .product-detail-page .two-column-primary .title:before {
       content: '';
       position: absolute;
       width: 30px;
@@ -9158,6 +9193,25 @@ h6 {
       left: -43px;
       top: 25px; }
       @media (max-width: 1139.98px) {
-        .product-detail-page .two-column-blue .title:before {
+        .product-detail-page .two-column-primary .title:before {
+          background-color: transparent; } }
+
+.product-detail-page .one-column-gray {
+  background-color: #F4F5F7;
+  padding-top: 140px;
+  padding-bottom: 40px; }
+  .product-detail-page .one-column-gray .title {
+    position: relative;
+    font-family: Raleway; }
+    .product-detail-page .one-column-gray .title:before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      background-color: #1EA8E0;
+      left: -43px;
+      top: 25px; }
+      @media (max-width: 1139.98px) {
+        .product-detail-page .one-column-gray .title:before {
           background-color: transparent; } }
 
