@@ -1,0 +1,181 @@
+.about-page {
+  .section-rect {
+    background-color: $gray-100;
+    padding: 60px 0;
+    .rect-box {
+      margin-top: 0;
+      border-top: 1px solid $primary;
+    }
+  }
+  .one-column-blue {
+    position: relative;
+    padding: 160px 0;
+    .title {
+      position: relative;
+      margin-bottom: 100px;
+      font-family: $font-family-monospace;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 1px;
+        background-color: $secondary;
+        left: -57px;
+        top: 25px;
+        @include media-breakpoint-down('md') {
+          background-color: transparent;
+        }
+      }
+    }
+    ul {
+      display: inline-block;
+      .nav-item {
+        .nav-link {
+          font-size: $font-size-lg;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .one-column-message {
+    padding-top: 125px;
+    padding-bottom: 85px;
+    @include media-breakpoint-down('lg') {
+      padding: 65px;
+      padding-bottom: 40px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .title {
+      position: relative;
+      font-family: $font-family-monospace;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        background-color: $secondary;
+        left: -43px;
+        top: 25px;
+        @include media-breakpoint-down('lg') {
+          background-color: transparent;
+        }
+      }
+    }
+    .gray-box {
+      background-color: $gray-100;
+      padding: 110px 50px 85px 65px;
+      @include media-breakpoint-down('lg') {
+        padding: 30px 20px;
+      }
+      border-radius: 4px;
+      .box-content {
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-down('lg') {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .description {
+          margin-right: 40px;
+          @include media-breakpoint-down('lg') {
+            margin-right: 0;
+          }
+        }
+        .profile {
+          margin-left: 45px;
+          width: 400px;
+          @include media-breakpoint-down('md') {
+            margin-left: 0;
+            width: 100%;
+          }
+          img {
+            width: 100%;
+          }
+          .content {
+            padding: 0 40px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: $white;
+            .name {
+              width: 320px;
+              @include media-breakpoint-down('sm') {
+                width: 100%;
+              }
+              margin-left: auto;
+              margin-right: auto;
+              padding-top: 53px;
+              margin-top: -20px;
+              color: $primary;
+              font-weight: 500;
+              font-size: 30px;
+              position: relative;
+              z-index: 2;
+              text-align: center;
+              background-color: $white;
+              padding-bottom: 50px;
+              &:after {
+                position: absolute;
+                content: '';
+                width: 40px;
+                height: 1px;
+                background-color: $primary;
+                left: 40%;
+                bottom: 20px;
+              }
+            }
+            .position {
+              font-size: $font-size-base;
+              text-align: center;
+              margin-bottom: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .two-column-blue {
+    background-color: $primary;
+    position: relative;
+    padding-top: 156px;
+    padding-bottom: 130px;
+    @include media-breakpoint-down('lg') {
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 40%;
+      height: 290px;
+      background-color: $primary;
+      left: 0;
+      top: -290px;
+      @include media-breakpoint-down('lg') {
+        display: none;
+      }
+    }
+    .title {
+      position: relative;
+      font-family: $font-family-monospace;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        background-color: $secondary;
+        left: -43px;
+        top: 25px;
+        @include media-breakpoint-down('lg') {
+          background-color: transparent;
+        }
+      }
+    }
+    .value-item {
+      .value {
+        padding: 6px 0;
+      }
+    }
+  }
+}

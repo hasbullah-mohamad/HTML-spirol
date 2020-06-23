@@ -1,0 +1,68 @@
+$font-maps: (
+  'PoppinsMedium':                       ( family: 'Poppins',        file: 'Poppins-Medium',         weight: 500, style: normal ),
+  'PoppinsRegular':                      ( family: 'Poppins',        file: 'Poppins-Regular',        weight: 400, style: normal ),
+  'RalewayExtraBold':                    ( family: 'Raleway',        file: 'Raleway-ExtraBold',      weight: 900, style: normal ),
+  'MyriadProRegular':                    ( family: 'MyriadPro',      file: 'Myriad_Pro_Regular',     weight: 400, style: normal )
+);
+
+$font-weight-maps: (
+  'normal': $font-weight-normal,
+  'bold': $font-weight-bold,
+  'medium': $font-weight-medium
+);
+
+$icon-sizes: (
+  'xl': 50px,
+  'lg': 40px,
+  'md': 30px,
+  'base': 22px,
+  'sm': 18px,
+  'xs': 14px
+);
+
+$heading-maps: (
+  'h1': ('font-size': $h1-font-size, 'letter-spacing': 0, 'line-height': 1),
+  'h2': ('font-size': $h2-font-size, 'letter-spacing': 0, 'line-height': 1),
+  'h3': ('font-size': $h3-font-size, 'letter-spacing': 0, 'line-height': 1.3),
+  'h4': ('font-size': $h4-font-size, 'letter-spacing': 0, 'line-height': 1.3),
+  'h5': ('font-size': $h5-font-size, 'letter-spacing': 0, 'line-height': 1.3),
+  'h6': ('font-size': $h6-font-size, 'letter-spacing': 0, 'line-height': 1)
+);
+
+$heading-extended-maps: (
+  'h3': ('font-size': $h3-font-size, 'letter-spacing': 0, 'line-height': 1),
+);
+
+$font-size-maps: (
+  'lg': ('font-size': $font-size-base * 1.25),
+  'md': ('font-size': $font-size-base * 1.125),
+  'base': ('font-size': $font-size-base),
+  'sm': ('font-size': $font-size-base * 0.875),
+  'xs': ('font-size': $font-size-base * 0.75)
+);
+
+$font-family-sans-serif:      Poppins;
+$font-family-monospace:       Raleway;
+$font-family-special:         Myriad;
+
+$icon-names: (
+  'world',
+  'world-blue',
+  'search',
+  'facebook',
+  'linkedin',
+  'twitter',
+  'mail',
+  'phone-call',
+  'yur',
+  'download',
+  'arrow-left',
+  'arrow-right',
+  'arrow-left-white',
+  'arrow-down',
+  'arrow-up'
+);
+
+.font-weight-medium {
+  font-weight: $font-weight-medium !important;
+}

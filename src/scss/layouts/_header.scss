@@ -1,0 +1,166 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  .navbar {
+    padding: 5px 20px;
+    .navbar-collapse {
+      flex-direction: column;
+    }
+    .navbar-heading {
+      margin-bottom: 40px;
+      @include media-breakpoint-down('md') {
+        margin-bottom: 0;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .navbar-brand {
+        img {
+          width: 288px;
+          height: auto;
+          @include media-breakpoint-down('md') {
+            width: 200px;
+          }
+        }
+      }
+    }
+    .navbar-nav {
+      &.navbar-top {
+        margin-bottom: 35px;
+        .nav-item {
+          .nav-link {
+            font-size: 17px;
+            font-family: $font-family-sans-serif;
+            font-weight: 400;
+            padding-left: 12px;
+            padding-right: 12px;
+            .icon-world {
+              border: 3px solid $secondary;
+              border-radius: 50%;
+            }
+          }
+        }
+        @include media-breakpoint-down('md') {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 10px;
+          .nav-item {
+            &:first-child {
+              .nav-link {
+                padding-left: 0;
+              }
+            }
+            &:last-child {
+              .nav-link {
+                padding-right: 0;
+              }
+            }
+          }
+        }
+      }
+      .nav-item {
+        .nav-link {
+          color: $white;
+          text-transform: uppercase;
+          font-size: $font-size-lg;
+          font-family: $font-family-monospace;
+          @include media-breakpoint-down('md') {
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+        &:first-child {
+          .nav-link {
+            padding-left: 0;
+          }
+        }
+        &:last-child {
+          .nav-link {
+            padding-right: 0;
+          }
+        }
+      }
+      
+    }
+    .navbar-expanded {
+      position: absolute;
+      left: 20px;
+      bottom: 10px;
+      width: calc(100vw - 50px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include media-breakpoint-down('md') {
+        left: 0;
+        position: relative;
+        width: 100%;
+        display: block;
+      }
+      .search-action {
+        position: relative;
+        input {
+          width: 233px;
+          background-color: transparent;
+          border: none;
+          border-radius: 0;
+          padding: 2.5px 5px;
+          border-bottom: 1px solid $secondary;
+          outline: none;
+          @include media-breakpoint-down('md') {
+            width: 100%;
+            max-width: 320px;
+          }
+        }
+        .icon {
+          position: absolute;
+          left: 210px;
+          top: 5px;
+          @include media-breakpoint-down('md') {
+            left: 300px;
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    border: none;
+    outline: none;
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+    span {
+      &:not(:last-of-type) {
+        margin-bottom: 0.375em;
+      }
+      height: 3px;
+      width: 24px;
+      background-color: $white;
+      border-radius: 2px;
+      display: block;
+      @include transition(transform .2s ease);
+    }
+    
+    &[aria-expanded="true"] {
+      span {
+        position: absolute;
+        top: 11px;
+        &:first-child {
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          visibility: hidden;
+        }
+        &:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

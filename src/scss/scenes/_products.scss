@@ -1,0 +1,45 @@
+.products-page {
+  .section-rect {
+    background-color: $gray-100;
+    padding: 60px 0;
+    .rect-box {
+      margin-top: 0;
+      border-top: 1px solid $primary;
+    }
+  }
+  .section-space {
+    border-bottom: 1px solid $primary;
+  }
+  .two-column-blue {
+    background-color: $primary;
+    position: relative;
+    padding-top: 168px;
+    padding-bottom: 60px;
+    @include media-breakpoint-down('lg') {
+      padding-top: 40px;
+    }
+    .title {
+      position: relative;
+      font-family: $font-family-monospace;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        background-color: $secondary;
+        left: -43px;
+        top: 25px;
+        @include media-breakpoint-down('lg') {
+          background-color: transparent;
+        }
+      }
+    }
+    .value-item {
+      .value {
+        padding: 6px 0;
+        font-weight: 500;
+        font-size: $font-size-lg;
+      }
+    }
+  }
+}
