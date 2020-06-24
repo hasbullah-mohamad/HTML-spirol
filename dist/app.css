@@ -7895,7 +7895,7 @@ body {
   font-size: 14px; }
 
 .text-underline {
-  text-decoration: underline; }
+  text-decoration: underline !important; }
 
 .site {
   overflow-x: hidden; }
@@ -8237,6 +8237,40 @@ h6 {
   width: 14px;
   height: 14px; }
 
+.catalog-modal .modal-dialog {
+  max-width: 720px; }
+  .catalog-modal .modal-dialog .modal-header {
+    border-bottom: none;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 0;
+    padding-right: 70px; }
+    @media (max-width: 767.98px) {
+      .catalog-modal .modal-dialog .modal-header {
+        padding-right: 20px; } }
+    .catalog-modal .modal-dialog .modal-header .close {
+      width: 40px;
+      height: 40px;
+      padding: 5px;
+      border-radius: 40px;
+      background-color: #005596;
+      color: #fff;
+      text-decoration: none; }
+    .catalog-modal .modal-dialog .modal-header:before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: #646464; }
+  .catalog-modal .modal-dialog .modal-body {
+    padding: 70px;
+    padding-top: 40px; }
+  .catalog-modal .modal-dialog .modal-content {
+    border-radius: 10px; }
+
 .card-product {
   border: 1px solid #005596;
   min-height: 570px;
@@ -8537,7 +8571,7 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999; }
+  z-index: 1000; }
   .site-header .navbar {
     padding: 5px 20px; }
     .site-header .navbar .navbar-collapse {
@@ -8687,7 +8721,8 @@ h6 {
     .site-footer .footer-top .footer-menu .nav-item {
       padding-bottom: 1px; }
       .site-footer .footer-top .footer-menu .nav-item .nav-link {
-        padding: 8px 0; }
+        padding: 8px 0;
+        color: #005596; }
   .site-footer .footer-top .contact-item {
     display: flex;
     align-items: center;

@@ -1,3 +1,41 @@
-.modal {
-  
+.catalog-modal {
+  .modal-dialog {
+    max-width: 720px;
+    .modal-header {
+      border-bottom: none;
+      border-radius: 10px;
+      position: relative;
+      padding-top: 40px;
+      padding-bottom: 0;
+      padding-right: 70px;
+      @include media-breakpoint-down('sm') {
+        padding-right: 20px;
+      }
+      .close {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        border-radius: 40px;
+        background-color: $primary;
+        color: $white;
+        text-decoration: none;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: $gray-700;
+      }
+    }
+    .modal-body {
+      padding: 70px;
+      padding-top: 40px;
+    }
+    .modal-content {
+      border-radius: 10px;
+    }
+  }
 }
