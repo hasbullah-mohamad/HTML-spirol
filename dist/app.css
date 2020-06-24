@@ -8922,6 +8922,16 @@ h6 {
   background-size: cover;
   background-position: center; }
 
+.pattern-right {
+  position: absolute;
+  width: 109px;
+  height: 301px;
+  right: 0;
+  top: 0;
+  background-image: url(./images/pattern-right.ee27f5be59d4c174d922a7f3d694091f.png);
+  background-size: cover;
+  background-position: center; }
+
 .section-solutions {
   position: relative;
   padding-bottom: 128px; }
@@ -9079,7 +9089,7 @@ h6 {
   background-color: #F4F5F7; }
   @media (max-width: 991.98px) {
     .home-page .section-certification {
-      padding: 50px 0; } }
+      padding-bottom: 100px; } }
   .home-page .section-certification .title {
     font-family: Raleway;
     margin-bottom: 120px;
@@ -9096,6 +9106,9 @@ h6 {
       left: 2px;
       bottom: -20px;
       background-color: #687085; }
+      @media (max-width: 767.98px) {
+        .home-page .section-certification .title:before {
+          left: 40%; } }
   .home-page .section-certification .qualities {
     max-width: 760px;
     margin-left: auto;

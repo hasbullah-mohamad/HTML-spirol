@@ -56,6 +56,16 @@
   background-size: cover;
   background-position: center;
 }
+.pattern-right {
+  position: absolute;
+  width: 109px;
+  height: 301px;
+  right: 0;
+  top: 0;
+  background-image: url('../../media/pattern-right.png');
+  background-size: cover;
+  background-position: center;
+}
 .section-solutions {
   position: relative;
   padding-bottom: 128px;
