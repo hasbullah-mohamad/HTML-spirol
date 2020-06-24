@@ -9737,6 +9737,43 @@ h6 {
     margin-top: 0;
     border-top: 1px solid #005596; }
 
+.request-page .section-form {
+  padding-bottom: 60px; }
+  .request-page .section-form .request-form {
+    max-width: 943px;
+    background-color: #F4F5F7;
+    padding: 60px 150px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto; }
+    .request-page .section-form .request-form .form-item {
+      display: flex;
+      margin-bottom: 50px; }
+      .request-page .section-form .request-form .form-item label {
+        width: 300px;
+        text-align: right;
+        margin-right: 50px;
+        color: #005596;
+        font-size: 24px; }
+      .request-page .section-form .request-form .form-item textarea {
+        max-width: 457px;
+        width: 100%;
+        border-color: #005596;
+        font-size: 20px; }
+      .request-page .section-form .request-form .form-item input {
+        max-width: 457px;
+        width: 100%;
+        padding: 7px 18px;
+        border-color: #005596; }
+      .request-page .section-form .request-form .form-item select {
+        max-width: 457px;
+        width: 100%;
+        padding: 7px 18px;
+        border-color: #005596; }
+      .request-page .section-form .request-form .form-item div {
+        max-width: 457px;
+        width: 100%; }
+
 .product-detail-page .section-rect {
   background-color: #F4F5F7;
   padding: 60px 0; }
