@@ -9432,6 +9432,13 @@ h6 {
   .about-page .two-column-primary .value-item .value {
     padding: 6px 0; }
 
+.about-page hr {
+  width: 200%;
+  background-color: #1EA8E0;
+  margin-left: 25%;
+  margin-top: 0;
+  margin-bottom: 0; }
+
 .case-studies-page .section-rect {
   background-color: #F4F5F7;
   padding: 60px 0; }
