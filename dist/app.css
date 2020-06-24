@@ -8443,7 +8443,6 @@ h6 {
   .slick-next:hover,
   .slick-next:focus {
     outline: none;
-    background: transparent;
     color: transparent; }
     .slick-prev:hover:before, .slick-prev:focus:before,
     .slick-next:hover:before,
