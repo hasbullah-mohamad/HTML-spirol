@@ -5,16 +5,13 @@ import $ from 'jquery';
 import 'slick-carousel';
 
 $('.carousel').slick({
-  infinite: false,
-  centerMode: true,
-  dots: false,
+  dots: true,
   arrows: false,
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]
+});
+
+$('.quality-carousel').slick({
+  dots: false,
+  arrows: true,
+  centerPadding: true,
+  centerPadding: 100
 });

@@ -71,7 +71,8 @@
   margin-left: 0.5em;
   margin-right: 0.5em;
   @include media-breakpoint-down('xs') {
-    width: 278px !important;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
   }
   [dir="rtl"] & {
       float: right;
