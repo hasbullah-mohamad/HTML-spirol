@@ -297,6 +297,7 @@ $font-size-base:              16px !default; // Assumes the browser default, typ
 $font-size-md:                $font-size-base * 1.125 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
+$font-size-xs:                $font-size-base * 0.75 !default;
 
 $font-weight-lighter:         lighter !default;
 $font-weight-normal:          400 !default;
