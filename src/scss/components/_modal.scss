@@ -1,4 +1,4 @@
-.catalog-modal {
+.general-modal {
   .modal-dialog {
     max-width: 720px;
     .modal-header {
@@ -19,6 +19,26 @@
         background-color: $primary;
         color: $white;
         text-decoration: none;
+        position: relative;
+      }
+      .close:after {
+          content: '';
+          height: 25px;
+          border-left: 2px solid $white;
+          position: absolute;
+          transform: rotate(45deg);
+          left: 18px;
+          top: 8px;
+      }
+    
+      .close:before {
+          content: '';
+          height: 25px;
+          border-left: 2px solid $white;
+          position: absolute;
+          transform: rotate(-45deg);
+          left: 18px;
+          top: 8px;
       }
       &:before {
         content: '';

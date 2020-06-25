@@ -86,6 +86,7 @@
     margin-left: auto;
     margin-right: auto;
     .continent-item {
+      cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -93,6 +94,14 @@
       font-size: 24px;
       font-family: $font-family-special;
       margin-bottom: 24px;
+      &:hover {
+        text-decoration: none;
+      }
+      &[aria-expanded="true"] {
+        .icon {
+          transform: rotate(180deg);
+        }
+      }
     }
   }
   hr {
