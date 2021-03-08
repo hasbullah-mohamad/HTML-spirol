@@ -9591,9 +9591,14 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .whitepapers-page .two-column-primary .down-item:hover {
+      text-decoration: none; }
     @media (max-width: 991.98px) {
       .whitepapers-page .two-column-primary .down-item {
         margin-left: 0; } }
+    .whitepapers-page .two-column-primary .down-item[aria-expanded="true"] .icon {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
 
 .whitepapers-page .white-papers {
   padding-top: 168px;

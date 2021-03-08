@@ -15,3 +15,5 @@ $('.quality-carousel').slick({
   centerPadding: true,
   centerPadding: 100
 });
+
+$('#accordion .panel-default .collapse:not(:has(li))').prev().hide();

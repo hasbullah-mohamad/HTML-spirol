@@ -54,8 +54,16 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      &:hover {
+        text-decoration: none;
+      }
       @include media-breakpoint-down('md') {
         margin-left: 0;
+      }
+      &[aria-expanded="true"] {
+        .icon {
+          transform: rotate(180deg);
+        }
       }
     }
   }
